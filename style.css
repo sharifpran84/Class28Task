@@ -1,0 +1,29 @@
+.btn-1 {
+    text-decoration: none;
+    background: #02eba5;
+    color: white;
+    padding: 7px 20px;
+    font-size: 25px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.mango{
+    visibility: hidden;
+    opacity: 0;
+}
+.card{
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: .5s;
+    height: 550px;
+    background: #31a98c;
+    color: white;
+}
+.mango:checked ~.card{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+.card-img, .card-img-top{
+    height: 300px;
+}
